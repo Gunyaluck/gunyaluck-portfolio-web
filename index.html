@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gunyaluck.portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div id="cursor-trail"></div>
+
+    <nav>
+      <a href="#" class="nav-logo">gunyaluck<span>.portfolio</span></a>
+      <div class="nav-links">
+        <a href="#work">work</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+      </div>
+      <button
+        class="nav-cta"
+        onclick="
+          document
+            .getElementById('contact')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        get in touch
+      </button>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-glow"></div>
+      <div class="status-badge">
+        <div class="status-dot"></div>
+        open to work
+      </div>
+      <h1 class="hero-title">
+        <span class="line">
+            <span class="line-inner">i build <em>web applications</em></span>
+          </span>
+          <span class="line">
+            <span class="line-inner">and solve <em>real problems</em></span>
+          </span>
+      </h1>
+      <p class="hero-sub">
+        junior full-stack developer passionate about building real-world
+        applications. currently focused on improving backend, databases, and
+        deployment skills through hands-on projects.
+      </p>
+      <div class="hero-actions">
+        <button
+          class="btn-primary"
+          onclick="
+            document
+              .getElementById('work')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          see my work →
+        </button>
+        <a href="#contact" class="btn-ghost">download cv ↓</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-num" id="stat-projects">0</div>
+          <div class="hstat-lbl">projects built</div>
+        </div>
+        <!-- <div class="hstat">
+          <div class="hstat-num" id="stat-years">0</div>
+          <div class="hstat-lbl">years experience</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-num">open</div>
+          <div class="hstat-lbl">to remote work</div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item">REACT <span>·</span></span>
+        <span class="marquee-item">TYPESCRIPT <span>·</span></span>
+        <span class="marquee-item">JAVASCRIPT <span>·</span></span>
+        <span class="marquee-item">VUE.JS <span>·</span></span>
+        <span class="marquee-item">HTML <span>·</span></span>
+        <span class="marquee-item">CSS <span>·</span></span>
+        <span class="marquee-item">TAILWIND CSS <span>·</span></span>
+        <span class="marquee-item">NODE.JS <span>·</span></span>
+        <span class="marquee-item">EXPRESS.JS <span>·</span></span>
+        <span class="marquee-item">MONGODB <span>·</span></span>
+        <span class="marquee-item">POSTGRESQL <span>·</span></span>
+        <span class="marquee-item">AUTHENTICATION <span>·</span></span>
+        <span class="marquee-item">JAVA <span>·</span></span>
+        <span class="marquee-item">SPRINGBOOT <span>·</span></span>
+        <span class="marquee-item">POSTGRESQL <span>·</span></span>
+        <span class="marquee-item">GIT <span>·</span></span>
+        <span class="marquee-item">GITHUB <span>·</span></span>
+        <span class="marquee-item">NGINX <span>·</span></span>
+        <span class="marquee-item">UBUNTU <span>·</span></span>
+        <span class="marquee-item">PM2 <span>·</span></span>
+      </div>
+    </div>
+
+    <!-- Work -->
+    <section id="work">
+      <div class="sec-header">
+        <span class="sec-label">SELECTED WORK</span>
+        <!-- <a href="#" class="sec-action">all projects →</a> -->
+      </div>
+      <div class="proj-grid" id="projects"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="about-left reveal">
+        <div class="about-tag">ABOUT</div>
+        <div class="about-headline">
+          focused on <strong>building real projects,</strong><br />
+          improving <strong>problem-solving skills,</strong><br />
+          and growing into a <strong>skilled developer</strong>
+        </div>
+        
+        <p class="about-body">
+          i am transitioning into software development and building hands-on projects to strengthen my technical skills. i enjoy working across both frontend and backend, with a focus on practical and user-centered solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack">
+      <div class="stack-label">TECH STACK</div>
+      <div class="stack-pills reveal">
+        <span class="stack-pill">react</span>
+        <span class="stack-pill">typescript</span>
+        <span class="stack-pill">javascript</span>
+        <span class="stack-pill">vue.js</span>
+        <span class="stack-pill">tailwind css</span>
+        <span class="stack-pill">html</span>
+        <span class="stack-pill">css</span>
+        <span class="stack-pill">node.js</span>
+        <span class="stack-pill">express.js</span>
+        <span class="stack-pill">mongodb</span>
+        <span class="stack-pill">postgresql</span>
+        <span class="stack-pill">next.js</span>
+        <span class="stack-pill">authentication</span>
+        <span class="stack-pill">java</span>
+        <span class="stack-pill">springboot</span>
+        <span class="stack-pill">git</span>
+        <span class="stack-pill">github</span>
+        <span class="stack-pill">nginx</span>
+        <span class="stack-pill">ubuntu</span>
+        <span class="stack-pill">pm2</span>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact-left reveal">
+        <div class="contact-headline">
+          get in touch.<br /><strong>let's connect.</strong>
+        </div>
+        <p class="contact-sub">
+          currently seeking junior developer opportunities and internships. open to learning, collaborating, and contributing to real-world projects.
+        </p>
+      
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formspree.io/f/mjgpbqnk"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New portfolio message from Gunyaluck" />
+      
+          <div class="form-row">
+            <label for="name">name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+      
+          <div class="form-row">
+            <label for="email">email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+      
+          <div class="form-row">
+            <label for="message">message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+      
+          <button type="submit" class="btn-primary form-submit">send message →</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+        <div class="contact-alt">
+          or email me directly at
+          <br/>
+          <div class="contact-email-wrap">
+            <button
+              type="button"
+              class="contact-email"
+              onclick="copyEmail()"
+            >
+              gunyaluck0619@gmail.com →
+            </button>
+            <span id="copy-status" class="copy-status"></span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <a
+          href="mailto:gunyaluck0619@gmail.com?subject=Resume%20request%20%E2%80%94%20Gunyaluck%20Portfolio"
+          class="contact-card highlight"
+        >
+          <div class="contact-card-left">
+            <div class="contact-card-title">request resume</div>
+            <div class="contact-card-sub">i'll send the latest pdf</div>
+          </div>
+          <div class="contact-card-arrow">↓</div>
+        </a>
+        <a
+          href="https://github.com/Gunyaluck"
+          target="_blank"
+          class="contact-card"
+        >
+          <div class="contact-card-left">
+            <div class="contact-card-title">github</div>
+            <div class="contact-card-sub">github.com/Gunyaluck</div>
+          </div>
+          <div class="contact-card-arrow">↗</div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/gunyaluck-surabandidtip-b822133a6/"
+          target="_blank"
+          class="contact-card"
+        >
+          <div class="contact-card-left">
+            <div class="contact-card-title">linkedin</div>
+            <div class="contact-card-sub">linkedin.com/in/gunyaluck-surabandidtip-b822133a6</div>
+          </div>
+          <div class="contact-card-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-copy">© 2026 gunyaluck. all rights reserved.</span>
+      <div class="footer-links">
+        <a href="https://github.com/Gunyaluck" target="_blank">github</a>
+        <a href="https://www.linkedin.com/in/gunyaluck-surabandidtip-b822133a6/" target="_blank"
+          >linkedin</a
+        >
+        <a href="mailto:gunyaluck0619@gmail.com">email</a>
+      </div>
+    </footer>
+    <script src="data/projects.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
