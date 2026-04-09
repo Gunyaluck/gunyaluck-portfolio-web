@@ -70,10 +70,38 @@ window.PROJECTS = [
       width: 220,
       height: 160,
     },
+  },{
+    id: "kanban-task",
+    meta: "04 — 2026",
+    title: "Kanban Task Management App",
+    description:
+      "A full-stack Kanban application for managing tasks with drag-and-drop functionality and user authentication.",
+    features: "Drag & Drop | Authentication | Task Progress Tracking | Responsive Design",
+    tags: [
+      "Next.js",
+      "react",
+      "tailwind CSS",
+      "TypeScript",
+      "Tailwind CSS",
+      "supabase",
+      "Prisma",
+      "dnd-kit",
+    ],
+    links: {
+      site: "https://kanban-task-management-web-app-pi.vercel.app",
+      github: "https://github.com/Gunyaluck/Kanban-task-management-web-app",
+    },
+    thumb: {
+      type: "img",
+      src: "assets/images/kanban-task.png",
+      alt: "Kanban Task Management App",
+      width: 220,
+      height: 160,
+    },
   },
   {
     id: "portfolio",
-    meta: "04 — 2026",
+    meta: "05 — 2026",
     title: "Portfolio Website",
     description:
       "Built a responsive portfolio website to showcase projects and technical skills, with a focus on clean UI, performance, and smooth user experience.",
