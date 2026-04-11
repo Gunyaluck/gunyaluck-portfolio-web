@@ -1,5 +1,8 @@
 // Data source for the Work section.
 // Edit this file to add/update projects without touching HTML.
+//
+// links.github — either a single URL string, or an array of { label, url } for multiple repos
+// (e.g. separate frontend and backend).
 
 window.PROJECTS = [
   {
@@ -10,7 +13,7 @@ window.PROJECTS = [
       "A full-stack hotel management platform for room bookings, housekeeping, and billing with AI chatbot concierge and analytics dashboard.",
     features:
       "Authentication | CRUD | RESTful API | Responsive Design",
-    tags: ["next.js", "react", "javascript", "supabase", "tailwind CSS", "stripe"],
+    tags: ["Next.js", "React", "JavaScript", "Supabase", "Tailwind CSS", "Stripe"],
     links: {
       site: "https://neatly-final-project-1.vercel.app/",
       github: "https://github.com/parallell99/neatly-final-project-1",
@@ -30,14 +33,18 @@ window.PROJECTS = [
     description:
       "A modern dating web app with a Tinder-style swipe interface for discovering matches.",
     features: "Authentication | RESTful API | Real-time Chat | Admin Dashboard",
-    tags: ["vue.js", "java"],
+    tags: ["Vue.js", "Java", "Tailwind CSS", "SpringBoot", "PostgreSQL", "Supabase"],
     links: {
-      site: null,
-      github: "https://github.com/Gunyaluck/gunyaluck-dev-notes",
+      site: "https://merry-match-project-vert.vercel.app",
+      github: [
+        { label: "github · frontend", url: "https://github.com/polarisden/merry-match-project" },
+        { label: "github · backend", url: "https://github.com/polarisden/merry-mathch-BE" },
+      ],
     },
     thumb: {
-      type: "canvas",
-      id: "cv2",
+      type: "img",
+      src: "assets/images/merrymatch.png",
+      alt: "Merry Match — Online Dating Web App",
       width: 220,
       height: 160,
     },
@@ -50,18 +57,21 @@ window.PROJECTS = [
       "A personal web application for documenting and sharing development notes, tutorials, and learning progress.",
     features: "Authentication | CRUD | Responsive Design",
     tags: [
-      "react",
-      "tailwind CSS",
-      "vite",
-      "node.js",
-      "supabase",
-      "nginx",
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "Node.js",
+      "Supabase",
+      "Nginx",
       "PM2",
       "CI/CD",
     ],
     links: {
       site: "https://pjsdf.online",
-      github: "https://github.com/Gunyaluck/gunyaluck-dev-notes",
+      github: [
+        { label: "github · frontend", url: "https://github.com/Gunyaluck/gunyaluck-dev-notes" },
+        { label: "github · backend", url: "https://github.com/Gunyaluck/gunyaluck-dev-notes-backend" },
+      ],
     },
     thumb: {
       type: "img",
@@ -79,11 +89,11 @@ window.PROJECTS = [
     features: "Drag & Drop | Authentication | Task Progress Tracking | Responsive Design",
     tags: [
       "Next.js",
-      "react",
-      "tailwind CSS",
+      "React",
+      "Tailwind CSS",
       "TypeScript",
       "Tailwind CSS",
-      "supabase",
+      "Supabase",
       "Prisma",
       "dnd-kit",
     ],
@@ -107,10 +117,10 @@ window.PROJECTS = [
       "Built a responsive portfolio website to showcase projects and technical skills, with a focus on clean UI, performance, and smooth user experience.",
     features:
       "Responsive Design | Interactive UI | Smooth Animations | Project Showcase",
-    tags: ["html", "CSS", "javascript"],
+    tags: ["HTML", "CSS", "JavaScript"],
     links: {
-      site: null,
-      github: "https://github.com/parallell99/gunyaluck-portfolio-web",
+      site: "https://gunyaluck-portfolio-web-theta.vercel.app",
+      github: "https://github.com/Gunyaluck/gunyaluck-portfolio-web",
     },
     thumb: {
       type: "img",

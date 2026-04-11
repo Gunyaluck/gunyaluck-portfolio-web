@@ -1,14 +1,15 @@
       :root {
-        --bg: #0c0c0e;
-        --bg2: #111114;
-        --fg: #e8e8e6;
-        --muted: rgba(232, 232, 230, 0.38);
-        --faint: rgba(232, 232, 230, 0.1);
-        --fainter: rgba(232, 232, 230, 0.06);
-        --border: rgba(232, 232, 230, 0.08);
-        --border-hover: rgba(232, 232, 230, 0.16);
-        --accent: #e8e8e6;
-        --green: #22c55e;
+        --bg: #f2f7fc;
+        --bg2: #e6f0fa;
+        --fg: #142032;
+        --muted: rgba(22, 36, 54, 0.52);
+        --faint: rgba(22, 36, 54, 0.1);
+        --fainter: rgba(22, 36, 54, 0.05);
+        --border: rgba(22, 36, 54, 0.1);
+        --border-hover: rgba(22, 36, 54, 0.18);
+        --accent: #0ea5e9;
+        --accent-soft: rgba(14, 165, 233, 0.14);
+        --green: #16a34a;
         --serif: "DM Serif Display", serif;
         --sans: "Instrument Sans", sans-serif;
       }
@@ -63,7 +64,7 @@
       #cursor-trail {
         width: 36px;
         height: 36px;
-        border: 1px solid rgba(232, 232, 230, 0.2);
+        border: 1px solid rgba(22, 36, 54, 0.12);
         border-radius: 50%;
         position: fixed;
         top: 0;
@@ -87,7 +88,7 @@
         justify-content: space-between;
         padding: 16px 40px;
         border-bottom: 1px solid var(--border);
-        background: rgba(12, 12, 14, 0.85);
+        background: rgba(255, 255, 255, 0.82);
         backdrop-filter: blur(12px);
         z-index: 100;
       }
@@ -153,9 +154,10 @@
         height: 1500px;
         border-radius: 50%;
         background: radial-gradient(
-          circle,
-          rgba(229, 232, 232, 0.178) 0%,
-          transparent 50%
+          circle at 30% 30%,
+          rgba(14, 165, 233, 0.22) 0%,
+          rgba(244, 114, 182, 0.12) 35%,
+          transparent 58%
         );
         pointer-events: none;
         top: -32%;
@@ -245,7 +247,7 @@
       }
       .hero-title em {
         font-style: italic;
-        color: var(--muted);
+        color: #0c7ab8;
       }
 
       @keyframes slideUp {
@@ -363,7 +365,7 @@
       }
       .sec-label {
         font-size: 14px;
-        color: rgba(232, 232, 230, 0.22);
+        color: rgba(22, 36, 54, 0.22);
         letter-spacing: 1px;
         font-weight: 500;
       }
@@ -400,7 +402,7 @@
       }
       .proj-card:hover {
         border-color: var(--border-hover);
-        background: rgba(232, 232, 230, 0.04);
+        background: rgba(22, 36, 54, 0.04);
         transform: translateY(-3px);
       }
       .proj-card:hover .proj-title {
@@ -423,21 +425,21 @@
       }
       .proj-meta {
         font-size: 12px;
-        color: rgba(232, 232, 230, 0.18);
+        color: rgba(22, 36, 54, 0.18);
         letter-spacing: 0.5px;
         margin-bottom: 6px;
       }
       .proj-title {
         font-size: 18px;
         font-weight: 400;
-        color: rgba(232, 232, 230, 0.711);;
+        color: rgba(22, 36, 54, 0.78);
         letter-spacing: -0.4px;
         margin-bottom: 6px;
         transition: color 0.2s;
       }
       .proj-desc {
         font-size: 14px;
-        color: rgba(232, 232, 230, 0.3);
+        color: rgba(22, 36, 54, 0.3);
         line-height: 1.7;
       }
       .proj-actions {
@@ -469,8 +471,8 @@
       }
       .proj-tag {
         font-size: 14px;
-        color: rgba(232, 232, 230, 0.3);
-        background: rgba(232, 232, 230, 0.05);
+        color: rgba(22, 36, 54, 0.3);
+        background: rgba(156, 166, 178, 0.464);
         border: 1px solid var(--border);
         padding: 3px 8px;
         border-radius: 4px;
@@ -515,7 +517,7 @@
       }
       .about-tag {
         font-size: 14px;
-        color: rgba(232, 232, 230, 0.22);
+        color: rgba(22, 36, 54, 0.22);
         letter-spacing: 1px;
         margin-bottom: 20px;
         text-align: center;
@@ -536,7 +538,7 @@
       }
       .about-body {
         font-size: 16px;
-        color: rgba(232, 232, 230, 0.4);
+        color: rgba(22, 36, 54, 0.4);
         line-height: 1.8;
         max-width: 700px;
         text-align: center;
@@ -547,7 +549,7 @@
       }
       .skills-title {
         font-size: 11px;
-        color: rgba(232, 232, 230, 0.22);
+        color: rgba(22, 36, 54, 0.22);
         letter-spacing: 1px;
         margin-bottom: 20px;
       }
@@ -556,7 +558,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 10px 0;
-        border-bottom: 1px solid rgba(232, 232, 230, 0.05);
+        border-bottom: 1px solid rgba(22, 36, 54, 0.05);
       }
       .skill-row:last-child {
         border-bottom: none;
@@ -568,7 +570,7 @@
       .skill-track {
         width: 120px;
         height: 2px;
-        background: rgba(232, 232, 230, 0.07);
+        background: rgba(22, 36, 54, 0.07);
         border-radius: 2px;
         overflow: hidden;
       }
@@ -587,7 +589,7 @@
       }
       .stack-label {
         font-size: 11px;
-        color: rgba(232, 232, 230, 0.22);
+        color: gray;
         letter-spacing: 1px;
         margin-bottom: 20px;
       }
@@ -598,9 +600,9 @@
       }
       .stack-pill {
         font-size: 12px;
-        color: rgba(232, 232, 230, 0.35);
-        background: rgba(232, 232, 230, 0.04);
-        border: 1px solid rgba(232, 232, 230, 0.09);
+        color: black;
+        background: rgba(22, 36, 54, 0.04);
+        border: 1px solid rgba(22, 36, 54, 0.09);
         padding: 7px 14px;
         border-radius: 6px;
         transition: all 0.2s;
@@ -608,8 +610,8 @@
       }
       .stack-pill:hover {
         color: var(--fg);
-        border-color: rgba(232, 232, 230, 0.22);
-        background: rgba(232, 232, 230, 0.08);
+        border-color: rgba(22, 36, 54, 0.22);
+        background: rgba(22, 36, 54, 0.08);
       }
 
       /* ── Contact ── */
@@ -635,7 +637,7 @@
       }
       .contact-sub {
         font-size: 14px;
-        color: rgba(232, 232, 230, 0.35);
+        color: rgba(22, 36, 54, 0.35);
         line-height: 1.7;
         max-width: 340px;
         margin-bottom: 32px;
@@ -658,12 +660,12 @@
       .contact-alt {
         margin-top: 14px;
         font-size: 12px;
-        color: rgba(232, 232, 230, 0.28);
+        color: rgba(22, 36, 54, 0.28);
         line-height: 1.7;
       }
 
       .contact-alt a {
-        color: rgba(232, 232, 230, 0.5);
+        color: rgba(22, 36, 54, 0.5);
         text-decoration: none;
         border-bottom: 1px solid var(--border);
         padding-bottom: 2px;
@@ -701,13 +703,13 @@
         font-size: 11px;
         letter-spacing: 0.8px;
         text-transform: lowercase;
-        color: rgba(232, 232, 230, 0.28);
+        color: rgba(22, 36, 54, 0.28);
       }
 
       .form-row input,
       .form-row textarea {
         width: 100%;
-        background: rgba(232, 232, 230, 0.04);
+        background: rgba(22, 36, 54, 0.04);
         border: 1px solid var(--border);
         border-radius: 10px;
         color: var(--fg);
@@ -728,19 +730,19 @@
 
       .form-row input::placeholder,
       .form-row textarea::placeholder {
-        color: rgba(232, 232, 230, 0.22);
+        color: rgba(22, 36, 54, 0.22);
       }
 
       .form-row input:hover,
       .form-row textarea:hover {
-        border-color: rgba(232, 232, 230, 0.16);
-        background: rgba(232, 232, 230, 0.05);
+        border-color: rgba(22, 36, 54, 0.16);
+        background: rgba(22, 36, 54, 0.05);
       }
 
       .form-row input:focus,
       .form-row textarea:focus {
         border-color: var(--border-hover);
-        background: rgba(232, 232, 230, 0.06);
+        background: rgba(22, 36, 54, 0.06);
       }
 
       .form-submit {
@@ -768,7 +770,7 @@
       }
       .contact-card:hover {
         border-color: var(--border-hover);
-        background: rgba(232, 232, 230, 0.05);
+        background: rgba(22, 36, 54, 0.05);
         transform: translateY(-2px);
       }
       .contact-card-left {
@@ -798,10 +800,10 @@
         color: var(--bg);
       }
       .contact-card.highlight .contact-card-sub {
-        color: rgba(12, 12, 14, 0.5);
+        color: rgba(255, 255, 255, 0.72);
       }
       .contact-card.highlight .contact-card-arrow {
-        color: rgba(12, 12, 14, 0.5);
+        color: rgba(255, 255, 255, 0.72);
       }
       .contact-card.highlight:hover {
         opacity: 0.9;
@@ -817,7 +819,7 @@
       }
       .footer-copy {
         font-size: 12px;
-        color: rgba(232, 232, 230, 0.2);
+        color: rgba(22, 36, 54, 0.2);
       }
       .footer-links {
         display: flex;
@@ -825,7 +827,7 @@
       }
       .footer-links a {
         font-size: 12px;
-        color: rgba(232, 232, 230, 0.2);
+        color: rgba(22, 36, 54, 0.2);
         text-decoration: none;
         transition: color 0.2s;
       }
@@ -861,12 +863,12 @@
       }
       .marquee-item {
         font-size: 12px;
-        color: rgba(232, 232, 230, 0.2);
+        color: gray;
         letter-spacing: 1px;
         padding: 0 24px;
       }
       .marquee-item span {
-        color: rgba(232, 232, 230, 0.08);
+        color: rgba(22, 36, 54, 0.08);
       }
       @keyframes marquee {
         from {
@@ -1020,13 +1022,13 @@
           font-size: 11px;
           letter-spacing: 0.8px;
           text-transform: lowercase;
-          color: rgba(232, 232, 230, 0.28);
+          color: rgba(22, 36, 54, 0.28);
         }
         
         .form-row input,
         .form-row textarea {
           width: 100%;
-          background: rgba(232, 232, 230, 0.04);
+          background: rgba(22, 36, 54, 0.04);
           border: 1px solid var(--border);
           border-radius: 10px;
           color: var(--fg);
@@ -1041,7 +1043,7 @@
         .form-row input:focus,
         .form-row textarea:focus {
           border-color: var(--border-hover);
-          background: rgba(232, 232, 230, 0.06);
+          background: rgba(22, 36, 54, 0.06);
         }
         
         .form-submit {

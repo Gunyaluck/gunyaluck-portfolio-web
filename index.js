@@ -111,6 +111,33 @@
         return escapeHtml(s).replaceAll("\n", "<br/>");
       }
 
+      /** `links.github`: string URL, or array of { label, url } for multiple repos (e.g. front/back). */
+      function renderGithubLinks(github) {
+        if (!github) return "";
+        if (typeof github === "string") {
+          return `<a href="${escapeHtml(
+            github,
+          )}" class="btn-ghost proj-btn" target="_blank" rel="noopener noreferrer">github</a>`;
+        }
+        if (Array.isArray(github)) {
+          return github
+            .filter((item) => item && typeof item.url === "string" && item.url.trim())
+            .map((item) => {
+              const label =
+                typeof item.label === "string" && item.label.trim()
+                  ? item.label.trim()
+                  : "github";
+              return `<a href="${escapeHtml(
+                item.url.trim(),
+              )}" class="btn-ghost proj-btn" target="_blank" rel="noopener noreferrer">${escapeHtml(
+                label,
+              )}</a>`;
+            })
+            .join("");
+        }
+        return "";
+      }
+
       function renderProjects() {
         const mount = document.getElementById("projects");
         if (!mount) return;
@@ -154,11 +181,7 @@
                 )}" class="btn-primary proj-btn" target="_blank" rel="noopener noreferrer">view site</a>`
               : `<span class="btn-primary proj-btn proj-btn-disabled" aria-disabled="true">view site (soon)</span>`;
 
-            const githubBtn = github
-              ? `<a href="${escapeHtml(
-                  github,
-                )}" class="btn-ghost proj-btn" target="_blank" rel="noopener noreferrer">github</a>`
-              : "";
+            const githubBtns = renderGithubLinks(github);
 
             return `
 <article class="proj-card reveal">
@@ -171,7 +194,7 @@
       </div>
       <div class="proj-actions">
         ${siteBtn}
-        ${githubBtn}
+        ${githubBtns}
       </div>
     </div>
     <div class="proj-foot">
