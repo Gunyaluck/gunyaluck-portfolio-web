@@ -2,11 +2,11 @@
         --bg: #f2f7fc;
         --bg2: #e6f0fa;
         --fg: #142032;
-        --muted: rgba(22, 36, 54, 0.52);
+        --muted: rgba(22, 36, 54, 0.68);
         --faint: rgba(22, 36, 54, 0.1);
         --fainter: rgba(22, 36, 54, 0.05);
         --border: rgba(22, 36, 54, 0.1);
-        --border-hover: rgba(22, 36, 54, 0.18);
+        --border-hover: rgba(22, 36, 54, 0.32);
         --accent: #0ea5e9;
         --accent-soft: rgba(14, 165, 233, 0.14);
         --green: #16a34a;
@@ -365,7 +365,7 @@
       }
       .sec-label {
         font-size: 14px;
-        color: rgba(22, 36, 54, 0.22);
+        color: rgba(22, 36, 54, 0.62);
         letter-spacing: 1px;
         font-weight: 500;
       }
@@ -425,7 +425,7 @@
       }
       .proj-meta {
         font-size: 12px;
-        color: rgba(22, 36, 54, 0.18);
+        color: rgba(22, 36, 54, 0.32);
         letter-spacing: 0.5px;
         margin-bottom: 6px;
       }
@@ -439,7 +439,7 @@
       }
       .proj-desc {
         font-size: 14px;
-        color: rgba(22, 36, 54, 0.3);
+        color: rgba(22, 36, 54, 0.52);
         line-height: 1.7;
       }
       .proj-actions {
@@ -471,7 +471,7 @@
       }
       .proj-tag {
         font-size: 14px;
-        color: rgba(22, 36, 54, 0.3);
+        color: rgba(22, 36, 54, 0.52);
         background: rgba(156, 166, 178, 0.464);
         border: 1px solid var(--border);
         padding: 3px 8px;
@@ -517,7 +517,7 @@
       }
       .about-tag {
         font-size: 14px;
-        color: rgba(22, 36, 54, 0.22);
+        color: rgba(22, 36, 54, 0.62);
         letter-spacing: 1px;
         margin-bottom: 20px;
         text-align: center;
@@ -538,7 +538,7 @@
       }
       .about-body {
         font-size: 16px;
-        color: rgba(22, 36, 54, 0.4);
+        color: rgba(22, 36, 54, 0.62);
         line-height: 1.8;
         max-width: 700px;
         text-align: center;
@@ -549,7 +549,7 @@
       }
       .skills-title {
         font-size: 11px;
-        color: rgba(22, 36, 54, 0.22);
+        color: rgba(22, 36, 54, 0.62);
         letter-spacing: 1px;
         margin-bottom: 20px;
       }
@@ -610,7 +610,7 @@
       }
       .stack-pill:hover {
         color: var(--fg);
-        border-color: rgba(22, 36, 54, 0.22);
+        border-color: rgba(22, 36, 54, 0.62);
         background: rgba(22, 36, 54, 0.08);
       }
 
@@ -637,7 +637,7 @@
       }
       .contact-sub {
         font-size: 14px;
-        color: rgba(22, 36, 54, 0.35);
+        color: rgba(22, 36, 54, 0.56);
         line-height: 1.7;
         max-width: 340px;
         margin-bottom: 32px;
@@ -660,7 +660,7 @@
       .contact-alt {
         margin-top: 14px;
         font-size: 12px;
-        color: rgba(22, 36, 54, 0.28);
+        color: rgba(22, 36, 54, 0.48);
         line-height: 1.7;
       }
 
@@ -703,7 +703,7 @@
         font-size: 11px;
         letter-spacing: 0.8px;
         text-transform: lowercase;
-        color: rgba(22, 36, 54, 0.28);
+        color: rgba(22, 36, 54, 0.48);
       }
 
       .form-row input,
@@ -730,7 +730,7 @@
 
       .form-row input::placeholder,
       .form-row textarea::placeholder {
-        color: rgba(22, 36, 54, 0.22);
+        color: rgba(22, 36, 54, 0.62);
       }
 
       .form-row input:hover,
@@ -819,7 +819,7 @@
       }
       .footer-copy {
         font-size: 12px;
-        color: rgba(22, 36, 54, 0.2);
+        color: rgba(22, 36, 54, 0.36);
       }
       .footer-links {
         display: flex;
@@ -827,7 +827,7 @@
       }
       .footer-links a {
         font-size: 12px;
-        color: rgba(22, 36, 54, 0.2);
+        color: rgba(22, 36, 54, 0.36);
         text-decoration: none;
         transition: color 0.2s;
       }
@@ -1022,7 +1022,7 @@
           font-size: 11px;
           letter-spacing: 0.8px;
           text-transform: lowercase;
-          color: rgba(22, 36, 54, 0.28);
+          color: rgba(22, 36, 54, 0.48);
         }
         
         .form-row input,
