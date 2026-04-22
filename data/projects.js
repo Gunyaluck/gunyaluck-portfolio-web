@@ -9,10 +9,11 @@ window.PROJECTS = [
     id: "neatly",
     meta: "01 — 2026",
     title: "Neatly — Hotel Management System",
+    category: "fullstack",
     description:
       "A full-stack hotel management platform for room bookings, housekeeping, and billing with AI chatbot concierge and analytics dashboard.",
     features:
-      "Authentication | CRUD | RESTful API | Responsive Design",
+      "Authentication | Booking Flow  | Stripe Payment | AI Chatbot | Analytics Dashboard",
     tags: ["Next.js", "React", "JavaScript", "Supabase", "Tailwind CSS", "Stripe"],
     links: {
       site: "https://neatly-final-project-1.vercel.app/",
@@ -30,9 +31,10 @@ window.PROJECTS = [
     id: "merry-match",
     meta: "02 — 2026",
     title: "Merry Match — Online Dating Web App",
+    category: "fullstack",
     description:
       "A modern dating web app with a Tinder-style swipe interface for discovering matches.",
-    features: "Authentication | RESTful API | Real-time Chat | Admin Dashboard",
+    features: "Real-time Chat | Swipe Matching | Admin Dashboard | Authentication",
     tags: ["Vue.js", "Java", "Tailwind CSS", "SpringBoot", "PostgreSQL", "Supabase"],
     links: {
       site: "https://merry-match-project-vert.vercel.app",
@@ -53,9 +55,10 @@ window.PROJECTS = [
     id: "dev-journal",
     meta: "03 — 2026",
     title: "Dev Journal — Personal Blog",
+    category: "fullstack",
     description:
       "A personal web application for documenting and sharing development notes, tutorials, and learning progress.",
-    features: "Authentication | CRUD | Responsive Design",
+    features: "Authentication  | CRUD Posts | Search & Filter | Comments & Likes | Admin Dashboard",
     tags: [
       "React",
       "Tailwind CSS",
@@ -84,6 +87,7 @@ window.PROJECTS = [
     id: "kanban-task",
     meta: "04 — 2026",
     title: "Kanban Task Management App",
+    category: "fullstack",
     description:
       "A full-stack Kanban application for managing tasks with drag-and-drop functionality and user authentication.",
     features: "Drag & Drop | Authentication | Task Progress Tracking | Responsive Design",
@@ -113,6 +117,7 @@ window.PROJECTS = [
     id: "portfolio",
     meta: "05 — 2026",
     title: "Portfolio Website",
+    category: "frontend",
     description:
       "Built a responsive portfolio website to showcase projects and technical skills, with a focus on clean UI, performance, and smooth user experience.",
     features:

@@ -138,14 +138,32 @@
         return "";
       }
 
-      function renderProjects() {
+      function normalizeCategory(value) {
+        const v = typeof value === "string" ? value.trim().toLowerCase() : "";
+        if (v === "fullstack" || v === "full-stack" || v === "full stack") return "fullstack";
+        if (v === "frontend" || v === "front-end" || v === "front end") return "frontend";
+        return "";
+      }
+
+      function renderProjects(filter) {
         const mount = document.getElementById("projects");
         if (!mount) return;
 
         const projects = Array.isArray(window.PROJECTS) ? window.PROJECTS : [];
         if (!projects.length) return;
 
-        mount.innerHTML = projects
+        const activeFilter = typeof filter === "string" ? filter : "all";
+        const filtered =
+          activeFilter === "all"
+            ? projects
+            : projects.filter((p) => normalizeCategory(p?.category) === activeFilter);
+
+        if (!filtered.length) {
+          mount.innerHTML = `<div class="proj-empty">no projects in this category yet.</div>`;
+          return;
+        }
+
+        mount.innerHTML = filtered
           .map((p) => {
             const site = p?.links?.site;
             const github = p?.links?.github;
@@ -212,7 +230,39 @@
           .join("");
       }
 
-      renderProjects();
+      function setActiveWorkFilter(next) {
+        const buttons = Array.from(document.querySelectorAll(".work-filter"));
+        buttons.forEach((btn) => {
+          const isActive = btn?.dataset?.filter === next;
+          btn.classList.toggle("is-active", isActive);
+          btn.setAttribute("aria-selected", isActive ? "true" : "false");
+        });
+      }
+
+      function initWorkFilters() {
+        const buttons = Array.from(document.querySelectorAll(".work-filter"));
+        if (!buttons.length) return;
+
+        const initial =
+          buttons.find((b) => b.classList.contains("is-active"))?.dataset?.filter ||
+          buttons[0]?.dataset?.filter ||
+          "all";
+
+        setActiveWorkFilter(initial);
+        renderProjects(initial);
+        observeReveals();
+
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const next = btn?.dataset?.filter || "all";
+            setActiveWorkFilter(next);
+            renderProjects(next);
+            observeReveals();
+          });
+        });
+      }
+
+      initWorkFilters();
       observeReveals();
 
       /* ── Canvas project thumbnails ── */

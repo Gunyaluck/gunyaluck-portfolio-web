@@ -379,10 +379,53 @@
         color: var(--fg);
       }
 
+      .work-filters {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .work-filter {
+        background: transparent;
+        color: var(--muted);
+        font-family: var(--sans);
+        font-size: 13px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        cursor: none;
+        transition:
+          color 0.2s,
+          border-color 0.2s,
+          background 0.2s;
+      }
+
+      .work-filter:hover {
+        color: var(--fg);
+        border-color: var(--border-hover);
+      }
+
+      .work-filter.is-active {
+        background: var(--fg);
+        color: var(--bg);
+        border-color: transparent;
+      }
+
       .proj-grid {
         display: flex;
         flex-direction: column;
         gap: 10px;
+      }
+
+      .proj-empty {
+        padding: 18px 20px;
+        border: 1px dashed var(--border);
+        border-radius: 12px;
+        background: var(--fainter);
+        color: var(--muted);
+        letter-spacing: 0.2px;
       }
 
       .proj-card {

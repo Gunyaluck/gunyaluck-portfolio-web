@@ -115,6 +115,35 @@
     <section id="work">
       <div class="sec-header">
         <span class="sec-label">SELECTED WORK</span>
+        <div class="work-filters" role="tablist" aria-label="Filter projects">
+          <button
+            type="button"
+            class="work-filter is-active"
+            data-filter="all"
+            role="tab"
+            aria-selected="true"
+          >
+            All
+          </button>
+          <button
+            type="button"
+            class="work-filter"
+            data-filter="fullstack"
+            role="tab"
+            aria-selected="false"
+          >
+            Full stack
+          </button>
+          <button
+            type="button"
+            class="work-filter"
+            data-filter="frontend"
+            role="tab"
+            aria-selected="false"
+          >
+            Front end
+          </button>
+        </div>
         <!-- <a href="#" class="sec-action">all projects →</a> -->
       </div>
       <div class="proj-grid" id="projects"></div>
